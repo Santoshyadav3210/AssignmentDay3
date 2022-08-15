@@ -1,0 +1,47 @@
+1. Write a program to print a array of five names in reverses order.
+
+
+let str = ['Santosh', 'Sanket', 'Rajesh', 'Tushar', 'Satish']
+
+let res = [];
+
+for (let i = str.length - 1; i > 0; i--) {
+  res.push(str[i])
+}
+console.log(res)
+
+
+
+2. Create a array of country objects having name capital and population as properties.
+
+Print the countries whose population is less than 2000
+
+
+let country = [
+  {
+    name: "India",
+    capital: "Delhi",
+    Population: 1000000
+  },
+  {
+    name: "Australia",
+    capital: "Canberra",
+    Population: 1000
+  },
+  {
+    name: "Japan",
+    capital: "Tokyo",
+    Population: 20000
+  },
+  {
+    name: "SriLanka",
+    capital: "Colombo",
+    Population: 1000
+  }
+]
+
+const result=country.filter((value)=>{
+  return (value.Population < 2000)
+})
+
+console.log(result)
